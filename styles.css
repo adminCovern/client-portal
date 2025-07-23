@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.border-glow {
+  box-shadow: 0 0 10px #00FFFF inset, 0 0 10px #00FFFF;
+  border: 1px solid #00FFFF;
+  transition: box-shadow 0.3s;
+}
+
+.border-glow:focus {
+  box-shadow: 0 0 20px #00FFFF inset, 0 0 20px #00FFFF;
+}
+
+.neon-glow {
+  animation: neonGlow 1.5s ease-in-out infinite alternate;
+}
+
+.glitch {
+  animation: glitch 0.8s infinite alternate;
+}
+
+.flicker {
+  animation: flicker 1.5s infinite alternate;
+}

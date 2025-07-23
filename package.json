@@ -1,0 +1,33 @@
+{
+  "name": "covren-client-portal",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "npx tailwindcss -i ./styles.css -o ./dist/styles.css --minify && npx babel index.jsx --out-dir dist --presets=@babel/preset-env,@babel/preset-react",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@babel/preset-react": "^7.24.7",
+    "@testing-library/react": "^16.0.0",
+    "autoprefixer": "^10.4.19",
+    "jest": "^29.7.0",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.4"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  }
+}
