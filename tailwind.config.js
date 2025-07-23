@@ -1,6 +1,7 @@
 module.exports = {
   content: [
     './index.jsx',
+    './index.html',
   ],
   theme: {
     extend: {
